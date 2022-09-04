@@ -11,80 +11,119 @@
     <header>
       <h1>Checkout</h1>
     </header>
-    <section class="section1">
+    <div class="container">
+          <section class="section1">
       <h2>Contact İnformation</h2>
 
       <div class="form e-mail">
         <label for="E-mail">E-mail</label> <br />
-        <input type="E-mail" placeholder="Enter your e-mail"  />
+        <input type="E-mail" placeholder="Enter your e-mail" />
+        <i class="fa-solid fa-envelope"></i>
       </div>
-        <div class="form phone">
-        <label for="phone">Enter your phone</label> <br />
-        <input type="number" placeholder="Enter your phone" value="phone" id="phone" />
+      <div class="form phone">
+        <label for="phone">Phone</label> <br />
+        <input
+          type="number"
+          placeholder="Enter your phone"
+          value="phone"
+          id="phone"
+        />
       </div>
-      <br><br><br>
+      <br /><br /><br />
       <h2>Shipping adrees</h2>
-       <div class="form name">
+      <div class="form name">
         <label for="Full name">Full name</label> <br />
-        <input type="name" placeholder="Enter your Full name"  />
+        <input type="name" placeholder="Enter your Full name" />
       </div>
-       <div class=" form Adrees">
+      <div class="form Adrees">
         <label for="Adrees">Adrees</label> <br />
-        <input type="Adrees" placeholder="Enter your adrees"  />
+        <input type="Adrees" placeholder="Enter your adrees" />
       </div>
-       <div class="form city">
+      <div class="form city">
         <label for="city">City</label> <br />
-        <input type="City" placeholder="Enter your city"  />
+        <input type="City" placeholder="Enter your city" />
       </div>
-      <div class="country">
-       <select name="country" id="country">
-        <label for="country">Country</label>
-        <option value="Turkey">Turkey</option>
-        <option value="England">England</option>
-        <option value="Tayvan">Tayvan</option>
-       </select>
-        <label for="Post code">Post code</label> 
-        <input type="Post code" placeholder="Enter your postal code..." value="post code" id="post code" />
+      <div class="country-post">
+        <div class="form country">
+         <select name="country" id="country">
+          <label for="country">Country</label>
+          <option value="Turkey">Turkey</option>
+          <option value="England">England</option>
+          <option value="Tayvan">Tayvan</option>
+        </select>
+        </div>
+        <div class="form country1">
+              <label for="Post code">Post code</label>
+        <input
+          type="Post code"
+          placeholder="Enter your postal code..."
+          value="post code"
+          id="post code"
+        />
+        </div>
+        
+      
       </div>
       <div class="check">
-          <input type="check-box" id="check">
-          <label for="check">See this information next-time</label>
+        <input type="check-box" id="check" />
+        <label for="check">See this information next-time</label>
       </div>
     </section>
     <section class="section2">
-        <div class="container">
-            <img src="./images/photo1.png" width="10%" alt="">
-            <div class="right1">
-                <h2>Vintage Backbag</h2>
-                <span>$54.99</span>
-                <span>$94.99</span>
-                <div class="sayi">
-                    <span>-</span>
-                    <span>1</span>
-                    <span>+</span>
-                </div>
-            </div>
-             <img src="./images/photo2.png" width="10%" alt="">
-            <div class="right2">
-                <h2>Levi Shoes</h2>
-                <span>$74.99</span>
-                <span>$124.99</span>
-                <div class="sayi">
-                    <span>-</span>
-                    <span>1</span>
-                    <span>+</span>
-                </div>
-            </div>
-            <div class="alt-yazi">
-               <span>Shipping</span>
-                <span>$19</span> <br>
-               <span>Total</span> 
-                <span>$148.98</span>
-            </div>
+        <div class="main1">
+               <div class="img-sec1">
+            <img src="./images/photo1.png" width="40%" alt="" />
         </div>
+      
+      <div class="pic sec1">
+        <h2>Vintage Backbag</h2>
+        <span>$54.99 <del>$94.99</del></span>
+        
+        <div class="sayi">
+          <button>-</button>
+          <span>1</span>
+        <button>+</button>
+        </div>
+      </div>
+        </div>
+        <div class="main2">
+             <div class="img-sec2">
+           <img src="./images/photo2.png" width="40%" alt="" />
+      </div>
+   
+      <div class="pic sec2">
+        <h2>Levi Shoes</h2>
+        <span>$74.99 <del>>$124.99</del></span>
+        <div class="count">
+          <button>-</button>
+          <span>1</span>
+        <button>+</button>
+        </div>
+      </div>
+
+        </div>
+     
+     <div class="cost">
+     <div class="yazi">
+        <span>Shipping</span>
+        <span >$19</span> 
+  </div>  
+  <div class="yazi2">
+   <span>Total</span>
+        <span class="right">$148.98</span>
+
+  </div>
+
+     </div>
+ 
+     
+    
     </section>
+
+    </div>
+  
     <footer>
-        <button>Continue</button>
+      <button>Continue</button>
     </footer>
   </body>
 </html>
