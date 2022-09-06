@@ -1,92 +1,172 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap")
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap") * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-body{
-height: 100vh;
-max-width: 1200px;
+body {
+  height: 100vh;
+  max-width: 1200px;
 }
-.container{
+.container {
   display: flex;
 }
-.left,.right{
-    width: 50vw;
-    height: 100vh;
-    margin: 3rem;
-    line-height: 2.2rem;
-}
-input{
-    width: 50%;
-    padding: 0.8rem 5rem;
-    
-}
-.form{
-    opacity: 0.6;
-    position: relative;
-}
-i{
-    position: absolute;
-    left: 0.5rem;
-    top: 2.7rem;
-}
-.country-post{
-    display: flex;
-    justify-content: flex-start;
-}
-.country select{
-    width: 100%;
-    padding: 0.5rem 2rem;
-}
-.postCode{
-    position: relative;
-    top: 0.5rem;
-    left: 8rem;
-}
-  
-  
-  
-
-
-
-
-header{
-    text-align: center;
-    font-size: 30px;
-    
-}
-
-/* .section1{
+.left,
+.right {
   width: 50vw;
   height: 100vh;
-} */
-
-.form input{
-padding: 0.7rem 10rem;
-
-
+  margin: 3rem;
+  line-height: 2.2rem;
 }
-/* .ortak2{
-    margin-top: 8rem;
-    border: 2px solid red;
-    text-align: left;
-} */
-
-
-.ortak2 {
- position:absolute;
+input{
+  width: 100%;
+  padding: 0.5rem 2rem;
+  border-radius: 7px;
+}
+form{
+  opacity: 0.7rem;
+}
+.form{
+  position: relative;
+}
+i{
+  position: absolute;
+  left: 0.5rem;
+  top: 2.7rem;
+}
+.country-post{
   display: flex;
-  justify-content:space-between;
-  bottom: 0.2rem;
+  justify-content: space-around;
+  margin-right: 10rem;
+  /* border: 2px solid red; */
+  
+  
+}
+.country select{
+  width: 100%;
+  padding: 0.5rem 2rem;
+}
+.postCode{
+  position: relative;
+  width: 50%;
+  margin-left: 2rem;
+}
+.postCode i {
+  position: absolute;
+  top: 2.8rem;
+  left: 0.5rem;
 }
 .ortak2 input {
   width: 1rem;
   margin-right: 1rem;
-  padding: 0.3rem 0.5rem;
-  
-  
 }
+
+.ortak2 {
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+h2 {
+  margin-top: 3rem;
+}
+h1 {
+  text-align: center;
+  margin-top: 3rem;
+}
+img {
+  /* width: 200px; */
+  height: 70%;
+  border-radius: 1rem;
+}
+.first,
+.second {
+  display: flex;
+  height: 12rem;
+}
+.grey {
+  background-color: rgb(238, 238, 238);
+  height: 70%;
+  width: 90%;
+  margin: 3rem;
+  padding: 2rem;
+  min-width: 20rem;
+  border-radius: 1.5rem;
+}
+.text{
+  margin-left: 1rem;
+  margin-top: 0.2rem;
+  opacity: 0.6;
+}
+.count{
+  display: flex;
+  border: 1px solid rgb(81, 79, 79);
+  width: 7rem;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+
+}
+.count button{
+  width: 1.5rem;
+  border-radius: 3px;
+  background-color: grey;
+  margin: 0.3rem 0;
+  font-size: 1.5rem;
+  border: none;
+}
+.shipping,.total{
+  display: flex;
+  justify-content: space-between;
+   border-top: 1px solid grey;
+  opacity: 0.6;
+}
+
+
+img {
+  opacity: 1;
+}
+
+.text > p {
+  color: orange;
+  font-size: 1.3rem;
+}
+.text del {
+  color: black;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.btn {
+  text-align: center;
+
+}
+
+.btn button {
+  padding: 1rem 2rem;
+  margin-bottom: 10rem;
+  background-color: orange;
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  font-size: large;
+}
+
+.cost {
+  margin-top: 3rem;
+}
+ @media screen and (max-width:900px) {
+  .container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+  .left,.right{
+    width: 90%;
+    margin: auto;
+  }
+  .grey{
+    height: 80%;
+  }
+ }
